@@ -1,0 +1,77 @@
+
+.program {
+  padding-left: 24px;
+  padding-right: 24px;
+
+  z-index: 150;
+}
+
+.program__title {
+  @include reset-list;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.program__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+
+.program__list-item {
+  position: relative;
+  width: 148px;
+  height: 130px;
+  margin-bottom: 16px;
+  padding: 88px 32px 18px 30px;
+
+  background: #ffffff;
+  border-radius: 8px;
+
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 64px;
+    height: 62px;
+    left: 42px;
+    top: 18px;
+    background-image: url("../img/health care 2.png");
+  }
+
+  &:nth-child(2)::before {
+    background-image: url("../img/diet plan 2.png");
+  }
+
+  &:nth-child(3)::before {
+    background-image: url("../img/yoga Virabhadrasana pose 1.png");
+  }
+
+  &:nth-child(4)::before {
+    background-image: url("../img/woman meditation 1.png");
+  }
+}
+
+.program__button {
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 36px;
+  background-color: #fe1c72;
+  border-radius: 4px;
+  width: 146px;
+  height: 48px;
+  padding: 6px;
+  text-align: center;
+  //vertical-align: middle;
+  margin: 0 auto 35px auto;
+}

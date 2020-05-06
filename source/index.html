@@ -8,21 +8,34 @@
 </head>
 <body>
 <main class="main">
+  <div class="main__money main__money--left"></div>
+  <div class="main__money main__money--right"></div>
   <nav class="main__main-nav main-nav">
     <ul class="main-nav__list">
       <li><a class="main-nav__link" href="#">Личный кабинет</a></li>
       <li><a class="main-nav__link">Марафон «Молодость. Перезагрузка». Сезон 10</a></li>
     </ul>
   </nav>
-  <section class="main__about about">
-    <h1 class="about__title">Профессиональный марафон по омоложению
-    <span class="about__subtitle">Молодость. Перезагрузка</span>
-    </h1>
-    <h2 class="about__prize-title">Призовой фонд марафона</h2>
-    <img class="about__prize-image" src="img/prize-image.png" alt="Призовой фонд марафона 1 млн. руб.">
-    <p class="about__start-date">Старт 23 марта</p>
+  <section class="main__about about container">
+    <picture>
+      <source media="(min-width: 1280px)" srcset="img/nastya_2.png">
+      <source media="(min-width: 768px)" srcset="img/nastya_2.png">
+      <img class="about__nastya-image" src="img/nastya2_1.png" width="208" height="438" alt="Ведущая программы Настя">
+    </picture>
+    <div class="about__wrapper">
+      <h1 class="about__title">Профессиональный марафон по омоложению
+      <span class="about__subtitle">Молодость. Перезагрузка</span>
+      </h1>
+      <h2 class="about__prize-title">Призовой фонд марафона</h2>
+      <picture>
+        <source media="(min-width: 1280px)" srcset="img/mln2 3.png">
+        <source media="(min-width: 768px)" srcset="img/mln2 3.png">
+        <img class="about__prize-image" src="img/mln2 2.png" width="251" height="76" alt="Призовой фонд марафона 1 млн. руб.">
+      </picture>
+      <p class="about__start-date">Старт 23 марта</p>
+    </div>
   </section>
-  <section class="main_program program">
+  <section class="main_program program container">
     <h2 class="program__title">4 блока занятий на каждый день</h2>
     <ul class="program__list">
       <li class="program__list-item">Ревитоника</li>

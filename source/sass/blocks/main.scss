@@ -1,0 +1,56 @@
+
+.main {
+  position: relative;
+  z-index: 2;
+}
+
+.main__money {
+  position: absolute;
+  content: "";
+  width: 140px;
+  height: 106px;
+  left: 0;
+  top: 0;
+  background-image: url("../img/money_01 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 140px 106px;
+  z-index: -1;
+
+  &--right {
+    background-image: url("../img/money_02 1.png");
+    background-size: 138px 106px;
+    width: 138px;
+    top: 0;
+    left: auto;
+    right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main__money {
+    width: 373px;
+    height: 286px;
+    background-size: 373px 286px;
+
+    &--right {
+      width: 378px;
+      height: 291px;
+      background-size: 378px 291px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main__money {
+    width: 473px;
+    height: 360px;
+    background-size: 473px 360px;
+
+    &--right {
+      width: 478px;
+      height: 365px;
+      background-size: 478px 365px;
+    }
+  }
+}

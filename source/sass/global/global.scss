@@ -13,9 +13,9 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Museo", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 24px;
   color: #2c3e50;
   font-style: normal;
@@ -23,19 +23,17 @@ body {
 }
 
 .container {
-  width: $desktop-width;
+  width: $mobile-width;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 14px;
+  padding-right: 14px;
 
-  @media (max-width: $tablet-width) {
-    width: 708px;
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
   }
 
-  @media (max-width: $mobile-width) {
-    width: 320px;
-    padding-left: 10px;
-    padding-right: 10px;
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
   }
 }
 
