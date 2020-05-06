@@ -2,3 +2,51 @@
 .main-nav__list {
   display: none;
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    padding-top: 23px;
+    padding-left: 8.3%;
+  }
+
+  .main-nav__list {
+    @include reset-list;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 418px;
+
+    & li:first-child a::before {
+      position: absolute;
+      content: "";
+      width: 18px;
+      height: 11px;
+      top: 2px;
+      left: -54px;
+      background: url("../img/Shape.svg") no-repeat center;
+    }
+
+    & li:first-child:hover {
+      text-decoration: underline;
+    }
+
+    & li:last-child {
+
+      padding-left: 10px;
+    }
+  }
+
+  .main-nav__link {
+    position: relative;
+    color: #2c3e50;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .main-nav {
+    padding-left: 8.3%;
+  }
+}
